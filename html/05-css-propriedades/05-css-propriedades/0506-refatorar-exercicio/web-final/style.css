@@ -1,11 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
   display: grid;
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
+  background-color: #f7f7f7;
 }
 
 img {
@@ -15,6 +15,12 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 p,
@@ -31,8 +37,8 @@ p {
 
 .header {
   display: grid;
-  justify-items: center;
   gap: 60px;
+  justify-items: center;
 }
 
 .menu {
@@ -40,12 +46,6 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  list-style: none;
-}
-
-ul {
-  padding: 0px;
-  margin: 0px;
 }
 
 .menu a {
@@ -55,11 +55,11 @@ ul {
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid white;
+  border: 2px solid #fff;
 }
 
 .menu a:hover {
-  border: 2px solid #e21;
+  border-color: #e21;
 }
 
 .conteudo {
@@ -84,23 +84,14 @@ ul {
 }
 
 .introducao::before {
-  content: "";
-  width: 60px;
-  height: 4px;
-  background-color: #e21;
-  position: absolute;
-  top: 30px;
-  right: -30px;
-}
-
-/* .detalhe {
+  content: '';
   width: 60px;
   height: 4px;
   background: #e21;
   position: absolute;
   top: 30px;
   right: -30px;
-} */
+}
 
 .botao {
   background: #e21;
@@ -111,17 +102,17 @@ ul {
 }
 
 .botao:hover {
-  background-color: #900;
+  background: #900;
 }
 
 .subtitulo {
-  background-image: url("../web-inicio/img/onda.svg");
   font-size: 4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
   padding: 40px;
   align-self: center;
+  background-image: url('./img/onda.svg');
 }
 
 .vantagens {
@@ -134,14 +125,15 @@ ul {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 4px solid transparent;
 }
 
 .vantagens-item:nth-child(odd) {
-  background-color: #f7f7f7;
+  background: #f7f7f7;
 }
 
 .vantagens-item:hover {
-  border-left: 4px solid #e21;
+  border-color: #e21;
 }
 
 .vantagens-item p {
