@@ -1,31 +1,147 @@
 body {
+   background-color: #f7f7f7;
+   font-family: Arial;
    margin: 0 auto;
-  display: grid; 
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-template-areas: 
-   "header header header header"
-   ".      main   main   .     "
-   "footer footer footer footer"
-   ;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
 }
 
 header {
-   background-color: rgb(48, 79, 80);
-   grid-area: header;
+   margin-top: 60px;
+}
+
+.logo{
+   display: flex;
+   justify-content: center;
+}
+
+ul {
+   list-style: none;
+}
+
+nav ul{
+   display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
+
+a{
+   text-decoration: none;
+   background-color: #fff;
+   padding: 1rem 2rem;
+   border-radius: 4px;
+   color: black;
+   text-transform: uppercase;
+   border: 2px solid transparent;
+}
+
+a:hover {
+   border: 2px solid #e21;
+   transition: .2s ease-in-out;
 }
 
 main {
-   background-color: blueviolet;
-   grid-area: main;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    max-width: 1000px;
-   width: 100%;
    margin: 0 auto;
 }
 
+.conteudo {
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   gap: 20px;
+   align-items: end;
+   text-align: right;
+   background-color: white;
+   position: relative;
+}
+
+.conteudo::before{
+   content: "";
+   width: 60px;
+   height: 4px;
+   background-color: #e21;
+   position: absolute;
+   top: 30px;
+   right: -30px;
+}
+
+p {
+   font-size: 1.25rem;
+   line-height: 1.3;
+}
+
+.botao {
+   background-color: #e21;
+   color: white;
+}
+
+.botao:hover {
+   background-color: #900;
+   border: 2px solid transparent;
+   transition: .2s ease-in-out;
+}
+
+img {
+   max-width: 100%;
+}
+
+h2 {
+   font-size: 4rem;
+   text-transform: uppercase;
+}
+
+.subtitulo {
+   background-image: url(../05-css-propriedades/05-css-propriedades/0506-refatorar-exercicio/web-inicio/img/onda.svg);
+   color: #c6c6c6;
+   display: flex;
+   align-items: center;
+   text-align: right;
+   padding: 40px;
+}
+
+.vantagens {
+   background-color: white;
+   padding: 40px;
+}
+
+.vantagem-item {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 10px 20px;
+   padding: 20px;
+   border: 4px solid transparent;
+}
+
+.vantagem-item p {
+   grid-column: 2;
+}
+
+.vantagem-item:nth-child(odd) {
+   background-color: #f7f7f7;
+}
+
+.vantagem-item:hover{
+   border-left: 4px solid #e21;
+}
+
+
+
+
 footer {
-   background-color: chartreuse;
-   grid-area: footer;
+   text-align: center;
+   background-color: white;
+   box-sizing: border-box;
+   padding: 40px;
+   margin-top: 60px;
 }
 
 
