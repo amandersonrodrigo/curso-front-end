@@ -33,6 +33,7 @@ nav ul{
 
 a{
    text-decoration: none;
+   display: block;
    background-color: #fff;
    padding: 1rem 2rem;
    border-radius: 4px;
@@ -47,8 +48,6 @@ a:hover {
 }
 
 main {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
    max-width: 1000px;
    margin: 0 auto;
 }
@@ -94,6 +93,21 @@ img {
    max-width: 100%;
 }
 
+.img-cover img {
+   object-fit: cover;
+   height: 100%;
+}
+
+.secao1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.secao2 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
 h2 {
    font-size: 4rem;
    text-transform: uppercase;
@@ -133,9 +147,6 @@ h2 {
    border-left: 4px solid #e21;
 }
 
-
-
-
 footer {
    text-align: center;
    background-color: white;
@@ -144,4 +155,32 @@ footer {
    margin-top: 60px;
 }
 
+@media (max-width: 940px) {
+   .secao2 {
+      grid-template-columns: 1fr;
+   }
 
+   .secao2 h2 {
+      text-align: center;
+   }
+}
+
+@media (max-width: 600px) {
+   .secao1 {
+      grid-template-columns: 1fr;
+   }
+
+   .conteudo {
+      text-align: left;
+      align-items: start;
+   }
+
+   .conteudo::before {
+      display: none;
+   }
+
+   .secao2 h2 {
+      font-size: 3rem;
+   }
+
+}
