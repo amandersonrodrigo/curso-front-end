@@ -1,3 +1,55 @@
+.introducao {
+   max-width: 1200px;
+   padding: 80px 20px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+   gap: 100px;
+}
+
 .introducao img {
    border-radius: 50%;
+   border: 2px solid rgba(255, 255, 255, 0.74);
+   box-shadow: 0 0 20px rgba(0, 150, 255, 0.15);
+}
+
+#sobre h1{
+   font-family: "Rajdhani", sans-serif;
+   font-size: 3rem;
+   line-height: 1.125;
+   color: #fff;
+   text-shadow: 0 0 8px rgba(255, 255, 255, 0.164);
+   margin-bottom: 20px;
+}
+
+#sobre h1 > span {
+   color: #C2BDA1;
+}
+
+@media (max-width: 1000px) {
+   #sobre h1 {
+      font-size: 2.5rem;
+   }
+
+   #sobre p{
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 800px) {
+   .introducao {
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+   }
+}
+
+@media (max-width: 700px) {
+   .introducao img {
+      display: none;
+   }
+
+   .introducao {
+      grid-template-columns: 1fr;
+   }
 }
