@@ -1,0 +1,53 @@
+#habilidades {
+   margin: 0 auto;
+}
+
+.habilidades {
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-around;
+   margin: 0 auto;
+   color: white;
+   font-size: 1.2rem;
+}
+
+.habilidades h3 {
+   color: #C2BDA1;
+   font-size: 1.5rem;
+}
+
+
+#projetos {
+   max-width: 1200px;
+   margin: 100px auto;
+   
+}
+
+.subtitulo {
+   font-size: 2.2rem;
+   text-align: center;
+   padding-bottom: 60px;
+}
+
+.projetos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.projetos-lista li a {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-decoration: none;
+}
+
+.thumb {
+   background-color:#C2BDA1 ;
+   height: 400px;
+   width: 350px;
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
