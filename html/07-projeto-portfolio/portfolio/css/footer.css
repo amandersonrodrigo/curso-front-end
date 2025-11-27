@@ -1,0 +1,135 @@
+/* footer{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   background-color: #A1A8C2;
+}
+
+.redes {
+   border: 2px solid white;
+   display: flex;
+   align-items: center;
+}
+
+footer img {
+   max-width: 100%;
+   display: block;
+   width: 1.5rem;
+   height: 1.5rem;
+   padding: 40px;
+} */
+
+/* footer {
+   background-color: #A1A8C2;
+}
+
+.rodape {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   padding: 40px 20px; 
+   gap: 20px;   
+   align-items: center;       
+}
+
+.rodape p {
+   align-self: center;
+   font-size: 1.5rem;
+}
+
+.redes {
+   display: flex;
+   justify-content: end;
+   gap: 12px;
+   margin-bottom: 10px;
+   
+}
+
+.redes a {
+   color: #000;
+   font-family: "Poppins", sans-serif;
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+
+.redes img {
+   width: 1.5rem;
+   height: 1.5rem;
+   display: block;
+} */
+
+footer {
+  background-color: #A1A8C2;
+  padding: 40px 60px;
+}
+
+.rodape {
+   max-width: 1200px;      
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center; 
+   gap: 30px;
+   justify-content: space-around;
+}
+
+.rodape p {
+   color: white;
+   font-size: 1.4rem;
+   line-height: 1.5;
+   max-width: 500px;
+}
+
+.rodape ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 22px; 
+}
+
+.redes {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   gap: 12px;
+}
+
+.redes img {
+   width: 26px;
+   height: 26px;
+}
+
+.redes a {
+   text-decoration: none;
+   font-size: 1.1rem;
+   font-weight: bold;
+   color: #141E30;
+   transition: 0.2s ease;
+}
+
+.redes a:hover {
+   color: #243B55;
+}
+
+.copyright {
+   text-align: center;
+   color: white;
+   font-size: 1rem;
+   margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+   .rodape {
+      grid-template-columns: 1fr;
+   }
+   .redes {
+      justify-content: center;
+   }
+
+   .rodape p {
+      justify-self: center;
+   }
+}
