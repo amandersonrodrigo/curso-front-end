@@ -34,6 +34,11 @@
    #sobre p{
       font-size: 1rem;
    }
+   
+   .introducao img {
+      display: none;
+   }
+
 }
 
 @media (max-width: 840px) { 
