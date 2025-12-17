@@ -1,3 +1,9 @@
-var nome = "Amanderson";
+
 var idade = 28;
-console.log(typeof idade);
+var simbolo = Symbol();
+console.log(typeof simbolo);
+
+var nome = "Amanderson";
+var sobrenome = "Rodrigo";
+var nomeCompleto = nome + sobrenome;
+console.log(nomeCompleto);
