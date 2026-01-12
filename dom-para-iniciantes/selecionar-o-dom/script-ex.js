@@ -1,19 +1,20 @@
 // Retorne no console todas as imagens do site
-const img = document.querySelectorAll('img');
-console.log(img);
+const imgs = document.querySelectorAll('img');
+console.log(imgs);
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
-const imagens = document.querySelectorAll('[src^="img/imagem"]');
-console.log(imagens);
+const img = document.querySelectorAll('[src^="img/imagem"]');
+console.log(img);
 
 // Selecione todos os links internos (onde o href começa com #)
-const linksInternos = document.querySelectorAll('[href^="#"]');
+const linksInternos = document.querySelectorAll('a[href^="#"]');
 console.log(linksInternos);
 
 // Selecione o primeiro h2 dentro de .animais-descricao
-const primeiroH2 = document.querySelector('.animais-descricao h2');
-console.log(primeiroH2);
+const h2 = document.querySelector('.animais-descricao h2');
+console.log(h2);
 
 // Selecione o último p do site
-const ultimoP = document.querySelectorAll('p');
-console.log(ultimoP[ultimoP.length - 1]);
+const paragrafo = document.querySelectorAll('p');
+
+console.log(paragrafo[paragrafo.length - 1]);
