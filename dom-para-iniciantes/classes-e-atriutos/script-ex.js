@@ -24,3 +24,4 @@ imgs.forEach((item) => {
 
 const linkExterno = document.querySelector('a[href^="http"]');
 linkExterno.setAttribute('href', 'https://www.google.com');
+console.log(linkExterno);
