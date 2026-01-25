@@ -49,10 +49,10 @@ window.addEventListener('keydown', hadleKeyboard);
 
 const imgs = document.querySelectorAll('img');
 
-function handleImg(evento) {
-   console.log(evento.target);
+function handleImg(event) {
+   console.log(event.currentTarget.getAttribute('src'));
 }
 
 imgs.forEach((img) => {
-   img.addEventListener('click', handleImg);
-})
+   img.addEventListener('click', handleImg)
+});
