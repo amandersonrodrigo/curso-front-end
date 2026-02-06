@@ -7,46 +7,44 @@ const links = document.querySelectorAll('a[href^="#"]');
 function handleAtivo(evento) {
    evento.preventDefault();
    links.forEach((link) => {
-      link.classList.remove('ativo')
-   });
-   evento.currentTarget.classList.add('ativo');
-} 
+      link.classList.remove('ativo');
+   })
+   this.classList.add('ativo');
+}
 
 links.forEach((link) => {
-   link.addEventListener('click', handleAtivo)
+   link.addEventListener('click', handleAtivo);
 });
 
 
 // Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
 
-const todosElement = document.querySelectorAll('body *');
+const elementos = document.querySelectorAll('body *');
 
-function handleElemento(evento) {
-   // console.log(evento.currentTarget);
-}
+// function elementosClicados(evento) {
+//    console.log(evento.currentTarget);
+// }
 
-todosElement.forEach((elemento) => {
-   elemento.addEventListener('click', handleElemento);
+elementos.forEach((elemento) => {
+   elemento.addEventListener('click', elementosClicados)
 });
-
-console.log(todosElement);
-
 
 // Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
 
-function handleElemento(evento) {
-   // evento.currentTarget.remove();
+function elementosClicados(evento) {
+   console.log(evento.currentTarget.remove());
 }
 
+// Se o usuário clicar na tecla (t), aumente todo o texto do site.
 
-// Se o usuário clicar na tecla (t), aumente todo o texto do site. 
-
-function handleClickT(event) {
-   if(event.key === 't' || event.key === 'T') {
-      document.documentElement.classList.toggle('textomaior');
+function aumentaTexto(evento) {
+   if(evento.key === 't') {
+      document.documentElement.classList.toggle('textomaior')
    }
 }
 
-window.addEventListener('keydown', handleClickT);
+window.addEventListener('keydown', aumentaTexto);
+
+
